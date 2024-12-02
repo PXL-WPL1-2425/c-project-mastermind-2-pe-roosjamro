@@ -302,16 +302,21 @@ namespace Mastermind2PE
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            MessageBoxResult antwoord = MessageBox.Show("Ben je zeker dat je wil afsluiten?", "Afsluiten", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            //MessageBoxResult antwoord = MessageBox.Show("Ben je zeker dat je wil afsluiten?", "Afsluiten", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
-            if (antwoord == MessageBoxResult.Yes)
-            {
-                e.Cancel = false;
-            }
-            else
-            {
-                e.Cancel = true;
-            }
+            //if (antwoord == MessageBoxResult.Yes)
+            //{
+            //    e.Cancel = false;
+            //}
+            //else
+            //{
+            //    e.Cancel = true;
+            //}
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+                this.Close();
         }
     }
 }
