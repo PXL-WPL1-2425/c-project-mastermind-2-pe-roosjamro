@@ -44,7 +44,7 @@
             <Label x:Name="Label4" Width="50" Height="50" BorderThickness="2"/>
         </StackPanel>
 
-        <Button Content="Valideer Code" Width="100" Margin="0,20,0,0" HorizontalAlignment="Center" Click="CheckCode_Click"/>
+        <Button Name="validateButton" Content="Valideer Code" Width="100" Margin="0,20,0,0" HorizontalAlignment="Center" Click="CheckCode_Click"/>
 
         <TextBlock x:Name="ScoreText" HorizontalAlignment="Center" Margin="0,20,0,0"/>
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -135,6 +136,14 @@ namespace Mastermind2PE
             //timer.Interval = TimeSpan.FromMilliseconds(1);
             //timer.Tick += Timer_Tick;
             //timer.Start();
+
+            string name = Interaction.InputBox("Wat is je naam?", "Name");
+
+            while (string.IsNullOrEmpty(name))
+            {
+                MessageBox.Show("Geef je naam in", "Naam");
+                name = Interaction.InputBox("Wat is je naam?", "Name");
+            }
         }
 
         //private void Timer_Tick(object sender, EventArgs e)
